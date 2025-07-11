@@ -9,4 +9,3 @@ print("Hello " + input("What is your name?"))  # Concatenating user input with a
 #then print() will print the word "hello" and the user input
 
 
-

@@ -21,4 +21,4 @@ for i in height:
     sum=sum+int(i)
     num+=1
 avg_height= sum/num
-print(f"The average height of the student is {avg_height}")   
+print(f"The average height of the student is {avg_height}")

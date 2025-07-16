@@ -16,7 +16,7 @@ num = int(input("How many numbers would you like?: "))
 
 
 #easy password
-# password=""
+# password=""  #empty string
 
 # for i in range(1,let+1):  
 #     random_char=random.choice(letters)

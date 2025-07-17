@@ -15,6 +15,8 @@ This repository contains all my daily code, projects, and progress updates as I 
 | 4   | Randomization and List | ✅ Completed |
 | 5   | Python Looping | ✅ Completed |
 | 6   | Python Functions and Hurdles Game | ✅ Completed |
+| 7   | Hangman Game | ✅ Completed |
+
 
 ---
 

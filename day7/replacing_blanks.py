@@ -19,7 +19,8 @@ user_input=input("Guess the word(Enter a letter): ").lower()
 
 for i in range(len(word)):
     if(user_input==word[i]):
-        display[i]=user_input        
+        display[i]=user_input
+        
 print(display)       
 
 

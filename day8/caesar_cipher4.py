@@ -28,14 +28,16 @@ while again:
     direction= input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
     text=input("Type your message:\n").lower()
     shift= int(input("Type the shift number:\n"))
+    shift = shift % 26
+    caesar(texts=text,shifts=shift,directions=direction)
+    result=input("Type 'yes' if you want to go again else type 'no' ").lower()
+    if result=='no':
+            again=False
+            print("Goodbye!!")
 
 # again=input("Type 'yes' if you want to go again else type 'no' ").lower()
 # while again=="yes":
-shift = shift % 26
-caesar(texts=text,shifts=shift,directions=direction)
-result=input("Type 'yes' if you want to go again else type 'no' ").lower()
-if result=='no':
-    again=False
-    print("Goodbye!!")
+
+
 
        

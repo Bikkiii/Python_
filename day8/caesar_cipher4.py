@@ -36,8 +36,4 @@ while again:
             print("Goodbye!!")
 
 # again=input("Type 'yes' if you want to go again else type 'no' ").lower()
-# while again=="yes":
-
-
-
-       
+# while again=="yes":       

@@ -18,6 +18,8 @@ This repository contains all my daily code, projects, and progress updates as I 
 | 7   | Hangman Game | ✅ Completed |
 | 8   | Function with inputs and Caesar Cipher | ✅ Completed |
 | 9   | Dictionaries, Nesting and the Secret Auction | ✅ Completed |
+| 10  | DFunctions With Outputs and Build Calculator | ✅ Completed |
+
 
 ---
 

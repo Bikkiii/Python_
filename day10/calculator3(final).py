@@ -36,10 +36,11 @@ def calculator():
         result=calculation(num1,num2)
         print(f"{num1} {what} {num2} = {result}")
         
-        again=input("type 'y' to continue or 'n' to exit: ").lower()
+        again=input("type 'y' to continue or 'n' to new calculator: ").lower()
         
         if again== 'y':
             num1=result
         else:
             next= False
-calculator()            
+            calculator()
+            

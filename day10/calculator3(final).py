@@ -1,7 +1,10 @@
 #calculator1
+import os
+from Art import logo
 
-# from Art import logo
-# print(logo)
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+print(logo)
 
 def add(n1,n2):
     return n1+n2
@@ -42,5 +45,6 @@ def calculator():
             num1=result
         else:
             next= False
+            clear_screen()
             calculator()
-            
+calculator()            

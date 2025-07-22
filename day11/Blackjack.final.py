@@ -10,6 +10,11 @@
 ## Cards are not removed from the deck as they are drawn.
 ## The computer is the dealer.
 import random
+from Art import logo
+import os
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
 cards=[11,2,3,4,5,6,7,8,9,10,10,10,10]
 
 def deal_card():
@@ -48,40 +53,48 @@ def compare(user_score, computer_score):
         else:
             print("\nComputer have the highest score\ncomputer won the game")   
             
-user_card=[]
-computer_card=[]
 
-for i in range(2):
-    
-    user_card.append(deal_card())
-    computer_card.append(deal_card())
-    
-is_game_over=False
-while not is_game_over:
-     
-    user_score=calculate_score(user_card) 
-    computer_score=calculate_score(computer_card) 
-    print(f"Your cards:  {user_card} and score is {user_score}")
-    print(f"computer's first cards:  {computer_card[0]} ")
 
-    
-    if user_score==0 or computer_score ==0 or user_score>21:
-        is_game_over=True
-    else:
-        again=input("Type 'y' to get another card  type 'n' to pass:  ")
-        if again=='y':
-            user_card.append(deal_card())
+def play_game():
+    user_card=[]
+    computer_card=[]
+    print(logo)
+
+    for i in range(2):
+        
+        user_card.append(deal_card())
+        computer_card.append(deal_card())
+        
+    is_game_over=False
+    while not is_game_over:
+        
+        user_score=calculate_score(user_card) 
+        computer_score=calculate_score(computer_card) 
+        print(f"Your cards:  {user_card} and score is {user_score}")
+        print(f"computer's first cards:  {computer_card[0]} ")
+
+        
+        if user_score==0 or computer_score ==0 or user_score>21:
+            is_game_over=True
         else:
-            is_game_over= True
+            again=input("Type 'y' to get another card  type 'n' to pass:  ").lower()
+            if again=='y':
+                user_card.append(deal_card())
+            else:
+                is_game_over= True
 
-while computer_score !=0 and computer_score<17:
-    computer_card.append(deal_card())         
-    computer_score=calculate_score(computer_card)
+    while computer_score !=0 and computer_score<17:
+        computer_card.append(deal_card())         
+        computer_score=calculate_score(computer_card)
 
 
-print(f"\n\nYour final hand : {user_card}, final score: {user_score}")        
-print(f"yComputer's final hand : {computer_card}, final score: {computer_score}")   
+    print(f"\n\nYour final hand : {user_card}, final score: {user_score}")        
+    print(f"yComputer's final hand : {computer_card}, final score: {computer_score}")   
 
-compare(user_score,computer_score)
+    compare(user_score,computer_score)
     
+
+while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower() =='y':
+    clear_screen()
+    play_game()
     

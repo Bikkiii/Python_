@@ -21,6 +21,8 @@ This repository contains all my daily code, projects, and progress updates as I 
 | 10  | Functions With Outputs and Build Calculator | ✅ Completed |
 | 11  | Made a Blackjack game | ✅ Completed |
 | 12  | Local and Global Scope and Number Guessing Game | ✅ Completed |
+| 13  | Debugging and How to find and fix errors in your code | ✅ Completed |
+
 
 
 ---

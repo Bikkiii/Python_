@@ -23,7 +23,7 @@ This repository contains all my daily code, projects, and progress updates as I 
 | 12  | Local and Global Scope and Number Guessing Game | ✅ Completed |
 | 13  | Debugging and How to find and fix errors in your code | ✅ Completed |
 | 14  | Higher Lower Gmae Project| ✅ Completed |
-| 15  | Coffe Maker| ✅ Completed |
+| 15  | Coffee Maker| ✅ Completed |
 
 
 

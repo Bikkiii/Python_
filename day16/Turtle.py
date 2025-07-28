@@ -1,3 +1,8 @@
+# class=my_class()        #object=class
+# class.speed             #object.attributes
+# class.stop()            #object.method
+
+
 from turtle import Turtle,Screen
 
 obj=Turtle()     #Constructiong an object

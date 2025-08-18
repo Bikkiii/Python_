@@ -1,5 +1,5 @@
 from turtle import Turtle,Screen
-
+# import random
 t1=Turtle()
 t1.shape('turtle')
 
@@ -13,5 +13,6 @@ def shape(n,c):
         
         
 for i in range(3,11):
+    # t1.color(random.choice(colors))
     shape(i,colors[i-3])    
        

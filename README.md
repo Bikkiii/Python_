@@ -26,6 +26,8 @@ This repository contains all my daily code, projects, and progress updates as I 
 | 15  | Coffee Maker| Completed |
 | 16  | Object Oriented Programming And Coffee Mchine using OOP| Completed |
 | 17  | Quiz program and benefits of OOP | Completed |
+| 17  | Turtle and Graphical User Interface(GUI) | Not Completed |
+
 
 
 
